@@ -4,34 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tasks List</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="image/task-list.png"
+        type="image/x-icon" />
 </head>
 
-<body>
+<body onload="getTasks()">
     <header>
         <p>My Tasks</p>
-        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-plus" id="add-button"></i>
     </header>
     <main id="tasks">
-
-        <section>
+        <section class="task-section" id="template-task">
             <div class="buttons">
-                <button class="update">
+                <button class="update-button">
                     <i class="fa-regular fa-pen-to-square"></i>
                 </button>
-                <button class="success">
+                <button class="success-button">
                     <i class="fa-solid fa-check"></i>
                 </button>
-                <button class="delete">
+                <button class="delete-button">
                     <i class="fa-solid fa-trash"></i>
                 </button>
             </div>
             <div class="content">
-                <p class="title">Red Book</p>
+                <p class="title task-title">Red Book</p>
                 <div class="date">
-                    <p>8/6/2024</p>
+                    <p class="task-date">8/6/2024</p>
                     <i class="fa-regular fa-calendar"></i>
                 </div>
             </div>
